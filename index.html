@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>I'm sorry</title>
+    <style>
+        body {
+            padding: 5px;
+        }
+
+        .hig {
+            display: inline-block;
+            width: fit-content;
+            background-color: lightgray;
+            padding: 2px 5px;
+            margin-bottom: 2px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Math를 이용한 계산 -->
+    <div>
+        y = 3x와 x축이 이루는 예각의 크기가 θ₁,<br />
+        y = 6x와 y=mx가 이루는 예각의 크기를 θ₂라고 할 때<br />
+        θ₁ = θ₂ 이다( 0 &lt m &lt 3 )<br />
+        θ₁, θ₂, 상수 m에 대하여<br />
+        <div class="hig">190m -8tan(θ₁ + θ₂)</div>의 값을 적으시오 :)
+    </div>
+    <p></p>
+    <!-- 진짜 간단한데 복잡해보이게 씀. 그냥 decodeURI 써보고 싶었음 :) -->
+    <input type="password"
+        onkeyup="if (this.value == eval(decodeURI('(a,%20b)%20=%3E%20190%20*%20((6%20-%20a)%20/%20(6%20*%20a%20+%201))%20-%208%20*%20Math.tan(Math.atan(a)%20+%20Math.abs(Math.atan(b)%20-%20Math.atan(((6%20-%20a)%20/%20(6%20*%20a%20+%201)))))'))(3, 6).toString()) { document.querySelector('input').style.display = 'none'; document.querySelector('div').style.display = 'none'; setInterval(() => { const s = document.createElement('span'); s.textContent = decodeURI('%EB%AF%B8%EC%95%88%ED%95%B4%20'); document.querySelector('p').appendChild(s); }, 10) }">
+
+</body>
+
+</html>
